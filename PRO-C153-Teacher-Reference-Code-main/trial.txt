@@ -1,0 +1,12 @@
+  tick:function(){
+    var planeRotation = this.el.getAttribute("rotation");
+
+    planeRotation += this.data.speedOfRotation;
+
+    this.el.setAttribute("rotation",{
+      x: planeRotation.x,
+      y: planeRotation.y,
+      z:planeRotation.z
+    })
+
+  }
